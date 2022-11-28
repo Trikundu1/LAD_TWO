@@ -1,2 +1,5 @@
-SELECT * FROM Patient
-order by Patient.DOB
+select *
+
+    from lab_two.patient
+
+    order by patient.DOB
