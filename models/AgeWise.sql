@@ -1,4 +1,4 @@
-select DOB,Patientid,Patientname,SpouseorParent_name,Gender,Married,Address,city,Pincode,Phone
+select datediff (yyyy,DOB,getdate()) as age,Patientid,Patientname,SpouseorParent_name,Gender,Married,Address,city,Pincode,Phone
 from lab_two.Patient
 order by patient.DOB
 
