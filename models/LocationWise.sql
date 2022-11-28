@@ -1,2 +1,2 @@
 SELECT * FROM lab_two.Patient
-ORDER BY Patient.address
+ORDER BY Patient.city
