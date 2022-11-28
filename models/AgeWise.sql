@@ -1,2 +1,4 @@
 SELECT * FROM lab_two.Patient
-ORDER BY Patient.DOB 
+SELECT DATE_FORMAT(FROM_DAYS(DATEDIFF(NOW(),'DOB')), '%Y') 
+ + 0 AS age;
+ORDER BY Patient.age 
