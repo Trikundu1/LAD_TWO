@@ -1,6 +1,4 @@
 
-select *
 
-    from lab_two.patient
-
-    order by patient.DOB
+    
+alter table lab_two.patient modify column age unset masking policy;
