@@ -1,4 +1,4 @@
-ALTER TABLE patient
+
 ADD age INT;
 
 UPDATE patient
