@@ -1,7 +1,7 @@
 with stg_Patient as (
     Patient_id ,Patient_name ,DOB ,SpouseorParent_name,Gender ,Married ,Address ,City,Pincode ,Phone
     from lab_two.Patient
-),
+)
 final as (
     select
         stg_Patient.City, 
