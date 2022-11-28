@@ -1,6 +1,7 @@
-select *
+ALTER TABLE patient
+ADD age INT;
 
-    from lab_two.patient
+UPDATE employee
+SET age = DATE_FORMAT(FROM_DAYS(DATEDIFF(NOW(), date_of_birth)), '%Y') + 0;
 
-    order by patient.DOB
-
+SELECT * FROM patient
