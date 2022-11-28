@@ -1,4 +1,5 @@
-ALTER TABLE lab_two.patient ADD patient.age varchar2(10);
+ALTER TABLE lab_two.patient 
+    ADD patient.age int;
 select *
 
     from lab_two.patient
