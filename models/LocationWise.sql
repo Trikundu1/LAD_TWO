@@ -1,8 +1,10 @@
 with stg_Patient as (
     Patient_id ,Patient_name ,DOB ,SpouseorParent_name,Gender ,Married ,Address ,City,Pincode ,Phone
     from lab_two.Patient
+    order by stg_Patient.City
+
 )
-final as (
+ final as (
     select
         stg_Patient.City, 
         stg_Patient.Patient_id,
@@ -14,8 +16,8 @@ final as (
         stg_Patient.Address,
         stg_Patient.Phone
     from stg_Patient
-    order by stg_Patient.City
-)
+    
+    )
 select * from final
 
 
