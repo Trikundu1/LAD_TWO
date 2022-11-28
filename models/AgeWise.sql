@@ -1,2 +1,2 @@
-SELECT * FROM patient
-order by patient.DOB
+SELECT * FROM Patient
+order by Patient.DOB
